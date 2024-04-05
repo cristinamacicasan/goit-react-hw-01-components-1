@@ -9,6 +9,9 @@ import statsData from "./Statistics/data.json";
 import FriendList from "./Friend/FriendList";
 import friends from "./Friend/friends.json";
 
+import TransactionHistory from "./Transactions/TransactionHistory";
+import transactions from "./Transactions/transactions.json";
+
 export const App = () => {
   return (
     <div>
@@ -20,8 +23,8 @@ export const App = () => {
         stats={userData.stats}
       />
       <Statistics title="Upload stats" stats={statsData} />
-       <FriendList friends={friends} />
-      React homework template
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
